@@ -1,5 +1,5 @@
-// import NewWorkSessionRow from "@/components/WorkSessionFormRow";
-// import WorkSessionRow from "@/components/WorkSessionRow";
+import NewWorkSessionRow from "@/components/WorkSessionFormRow";
+import WorkSessionRow from "@/components/WorkSessionRow";
 import { db } from "@/modules/db";
 import React from "react";
 
@@ -43,10 +43,10 @@ const AccountDetailPage: React.FC<Props> = async ({ params }) => {
           </div>
         </div>
         <div>
-          {/* <NewWorkSessionRow account={account} /> */}
-          {/* {account.workSessions.map((session) => (
+          <NewWorkSessionRow account={account} />
+          {account.workSessions.map((session) => (
             <WorkSessionRow key={session.id} session={session} />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
